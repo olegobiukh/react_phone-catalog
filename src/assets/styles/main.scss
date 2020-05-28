@@ -1,0 +1,10 @@
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./utils/mixins.scss";
+@import "./utils/vars.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Mont";
+  color: $c-text;
+}

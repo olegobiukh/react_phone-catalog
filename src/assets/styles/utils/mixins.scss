@@ -1,0 +1,11 @@
+@mixin mGridColumn($gap, $align:false) {
+  display: grid;
+  grid-auto-flow: column;
+
+  @if $gap {
+    grid-gap: $gap;
+  }
+  @if $align {
+    align-items: center;
+  }
+}
