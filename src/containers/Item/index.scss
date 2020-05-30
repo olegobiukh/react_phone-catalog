@@ -1,0 +1,12 @@
+@import "../../assets/styles/main.scss";
+
+.top-bar {
+  @include mGridColumn(0, true);
+  &__item {
+    display: grid;
+    align-items: center;
+    padding: 0 25px;
+    box-shadow: -1px 0px 0px #E2E6E9;
+    height: 100%;
+  }
+}

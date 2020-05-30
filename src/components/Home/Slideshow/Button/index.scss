@@ -1,0 +1,10 @@
+@import "../../../../assets/styles/main.scss";
+
+.slideshow__button {
+  background-color: #fff;
+  border: 1px solid #b4bdc4;
+  cursor: pointer;
+  &--disabled {
+    pointer-events: none;
+  }
+}
