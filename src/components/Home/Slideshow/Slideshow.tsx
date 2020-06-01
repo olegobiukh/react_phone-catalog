@@ -1,17 +1,17 @@
 import "./index.scss";
 
 import React, { useState } from "react";
-import * as BannerImg from "../../../assets/images/banner.png";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Button from "./Button";
 import uid from "uid";
+const BannerImg = require("../../../assets/images/banner.png");
 
 const Slideshow = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
 
-  const images = [BannerImg, BannerImg, BannerImg];
+  const images: string[] = [BannerImg, BannerImg, BannerImg];
 
-  const newImages = images.map((item, index) => (
+  const newImages = images.map((item) => (
     <div
       key={uid()}
       className={`slideshow__image`}
@@ -19,7 +19,7 @@ const Slideshow = () => {
     />
   ));
 
-  const pills = images.map((item, index) => (
+  const pills = images.map((item?: string, index?: number) => (
     <div
       key={uid()}
       onClick={() => setActiveSlide(index)}

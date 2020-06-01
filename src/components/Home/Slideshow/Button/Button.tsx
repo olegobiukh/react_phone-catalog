@@ -1,8 +1,14 @@
 import "./index.scss";
 
-import React from "react";
+import React, {FC, ReactNode} from "react";
 
-const Button = ({ renderProp, isDisables, changeSlide }) => {
+interface Props {
+  renderProp: ReactNode;
+  isDisables: boolean;
+  changeSlide: () => void
+}
+
+const Button:FC<Props> = ({ renderProp, isDisables, changeSlide }) => {
   return (
     <button
       className={`slideshow__button ${
