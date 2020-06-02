@@ -19,7 +19,7 @@ const Slideshow = () => {
     />
   ));
 
-  const pills = images.map((item?: string, index?: number) => (
+  const pills = images.map((_item: string, index: number) => (
     <div
       key={uid()}
       onClick={() => setActiveSlide(index)}
