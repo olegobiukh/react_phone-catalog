@@ -2,11 +2,11 @@ import "./index.scss";
 
 import React from "react";
 
-const Home = () => {
+const Product = () => {
   return (
     <div className={`top-bar`}>
     </div>
   );
 };
 
-export default Home;
+export default Product;

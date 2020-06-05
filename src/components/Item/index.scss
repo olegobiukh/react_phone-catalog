@@ -1,0 +1,78 @@
+@import "../../assets/styles/main.scss";
+
+.item {
+  width: 272px;
+  border: 1px solid #E2E6E9;
+  padding: 32px 24px 24px;
+  &__box {
+    margin-top: 24px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__pricing {
+    margin-top: 8px;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+  }
+  &__sale {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-decoration-line: line-through;
+    color: $c-secondary;
+  }
+  &__toolbar {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  &__button {
+    border: none;
+    padding: 0 48px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: $c-primary;
+    cursor: pointer;
+  }
+
+  &__button-heart {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b4bdc4;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  &__characteristics {
+    display: grid;
+    grid-gap: 8px;
+    margin: 16px 0;
+    border-top: 1px solid #e2e6e9;
+    padding-top: 16px;
+  }
+  &__line {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-weight: 600;
+    line-height: 15px;
+    font-size: 12px;
+    &-key {
+      color: $c-secondary;
+    }
+    &-value {
+      color: $c-primary;
+    }
+  }
+}
