@@ -15,7 +15,7 @@ const Slideshow = () => {
     <div
       key={uid()}
       className={`slideshow__image`}
-      style={{ backgroundImage: `url(${item})` }}
+      style={{ backgroundImage: `url(${item})`}}
     />
   ));
 

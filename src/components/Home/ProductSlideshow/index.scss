@@ -1,8 +1,32 @@
 @import "../../../assets/styles/main.scss";
 
 .product-slideshow {
+  margin-top: 80px;
   &__container {
     margin-top: 24px;
+    width: 100%;
+    overflow: hidden;
+    &-wrapper {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 16px;
+      transform: translateX(0);
+      transition: all 0.5s;
+    }
+  }
+  &__top {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__toolbar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+  }
+  &__icon--disabled {
+    color: #e2e6e9;
   }
   &__title {
     font-weight: bold;

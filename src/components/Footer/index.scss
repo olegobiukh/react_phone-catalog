@@ -1,0 +1,46 @@
+@import "../../assets/styles/main.scss";
+
+.footer {
+  display: grid;
+  margin-top: 80px;
+  height: 96px;
+  box-shadow: 0px -1px 0px #e2e6e9;
+  background: #fff;
+  &__container {
+    max-width: 1136px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  &__social {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    grid-gap: 64px;
+    &-item {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $c-secondary;
+      cursor: pointer;
+    }
+  }
+  &__right {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    &-text {
+      cursor: pointer;
+      color: $c-secondary;
+    }
+  }
+}
