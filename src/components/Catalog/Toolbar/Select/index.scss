@@ -1,0 +1,16 @@
+@import "../../../../assets/styles/main.scss";
+
+.catalog-select {
+  position: relative;
+  padding: 10px 20px 10px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 4px;
+  &__title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $c-secondary;
+  }
+}

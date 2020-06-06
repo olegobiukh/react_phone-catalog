@@ -1,0 +1,8 @@
+@import "../../../assets/styles/main.scss";
+
+.catalog-toolbar {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  grid-gap: 16px;
+}

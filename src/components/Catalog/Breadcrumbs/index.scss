@@ -1,0 +1,26 @@
+@import "../../../assets/styles/main.scss";
+
+.breadcrumbs {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-content: center;
+  grid-gap: 8px;
+  &__link {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $c-secondary;
+    cursor: pointer;
+  }
+  &__icon {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    color: #b4bdc4;
+    cursor: pointer;
+  }
+}

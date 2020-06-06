@@ -1,0 +1,30 @@
+@import "../../../assets/styles/main.scss";
+
+.pagination {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  grid-gap: 8px;
+  margin: auto;
+  margin-top: 40px;
+  width: fit-content;
+  cursor: pointer;
+  &__numbers {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    grid-gap: 8px;
+  }
+  &__item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e2e6e9;
+    &--active {
+      background: $c-primary;
+      color: #fff;
+    }
+  }
+}
