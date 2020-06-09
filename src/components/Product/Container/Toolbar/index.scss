@@ -1,0 +1,22 @@
+@import "../../../../assets/styles/main.scss";
+
+.colors {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-gap: 10px;
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 36px;
+    &__wrapper {
+      padding: 2px;
+      border: 2px solid $c-secondary;
+      &--active {
+        border-color: $c-primary;
+      }
+    }
+  }
+}

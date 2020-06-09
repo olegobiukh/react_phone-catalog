@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/main.scss";
+
+.gallery {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-gap: 17px;
+
+  &__left {
+    display: grid;
+    grid-template-columns: 80px;
+    grid-gap: 16px;
+  }
+
+  &__main {
+    width: 464px;
+    height: 464px;
+    padding: 11px;
+  }
+
+  &__item {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    border: 1px solid #c4c4c4;
+    &--active {
+      border: 1px solid $c-primary;
+    }
+  }
+}

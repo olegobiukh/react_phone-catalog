@@ -1,6 +1,6 @@
 import "./index.scss";
 import React from "react";
-import { AiOutlineHeart } from "react-icons/ai";
+import ItemToolbar from "../ItemToolbar";
 
 const ItemImg = require("../../assets/images/item.png");
 
@@ -30,14 +30,7 @@ const Item = () => {
             <p className={`item__line-value`}>4 GB</p>
           </li>
         </ul>
-        <div className="item__toolbar">
-          <button type="button" className={`item__button`}>
-            Add to cart
-          </button>
-          <button type="button" className={`item__button-heart`}>
-            <AiOutlineHeart size={20} />
-          </button>
-        </div>
+        <ItemToolbar />
       </div>
     </div>
   );

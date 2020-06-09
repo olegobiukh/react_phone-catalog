@@ -28,32 +28,7 @@
     text-decoration-line: line-through;
     color: $c-secondary;
   }
-  &__toolbar {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-  }
-  &__button {
-    border: none;
-    padding: 0 48px;
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
-    background: $c-primary;
-    cursor: pointer;
-  }
 
-  &__button-heart {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #b4bdc4;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
   &__characteristics {
     display: grid;
     grid-gap: 8px;

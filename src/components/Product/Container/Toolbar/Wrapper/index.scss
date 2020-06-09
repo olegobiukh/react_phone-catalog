@@ -1,0 +1,16 @@
+@import "../../../../../assets/styles/main.scss";
+
+.product-left__wrapper {
+  border-bottom: 1px solid #e2e6e9;
+  padding-bottom: 24px;
+  &:not(:first-of-type) {
+    margin-top: 24px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $c-secondary;
+    margin-bottom: 8px;
+  }
+}

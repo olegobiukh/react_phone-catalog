@@ -1,10 +1,14 @@
 import "./index.scss";
 
-import React from "react";
+import React, { FC } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsChevronLeft } from "react-icons/bs";
 
-const Breadcrumbs = () => {
+interface Props {
+  product?: string;
+}
+
+const Breadcrumbs: FC<Props> = ({ product }) => {
   return (
     <div className={`breadcrumbs`}>
       <AiOutlineHome />
@@ -12,6 +16,14 @@ const Breadcrumbs = () => {
         <BsChevronLeft />
       </div>
       <span className="breadcrumbs__link">Phones</span>
+      {product && (
+        <>
+          <div className="breadcrumbs__icon">
+            <BsChevronLeft />
+          </div>
+          <span className="breadcrumbs__link">{product}</span>
+        </>
+      )}
     </div>
   );
 };
