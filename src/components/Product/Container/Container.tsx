@@ -1,22 +1,18 @@
 import "./index.scss";
 
-import React, { FC } from "react";
+import React from "react";
 import Gallery from "./Gallery";
-import Toolbar from "./Toolbar";
-import ItemToolbar from "../../ItemToolbar";
+import About from "./About";
+import Tech from "./Tech";
+import Options from "./Options";
 
-interface Props {
-  title: string;
-}
-
-const Container: FC<Props> = ({ title }) => {
-
+const Container = () => {
   return (
-    <main className={`product`}>
-      <h1 className={`product__title`}>{title}</h1>
+    <main className={`product-container`}>
       <Gallery />
-      <Toolbar />
-      <ItemToolbar />
+      <Options />
+      <About />
+      <Tech />
     </main>
   );
 };

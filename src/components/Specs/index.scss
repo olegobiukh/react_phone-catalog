@@ -1,0 +1,21 @@
+@import "../../assets/styles/main.scss";
+
+.specs {
+  display: grid;
+  grid-gap: 8px;
+  margin: 0;
+  &__item {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-weight: 600;
+    line-height: 15px;
+    font-size: 12px;
+    &-key {
+      color: $c-secondary;
+    }
+    &-value {
+      color: $c-primary;
+    }
+  }
+}

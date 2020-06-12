@@ -12,42 +12,7 @@
     font-size: 14px;
     line-height: 21px;
   }
-  &__pricing {
-    margin-top: 8px;
-  }
-  &__price {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 140%;
-  }
-  &__sale {
-    margin-left: 8px;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    text-decoration-line: line-through;
-    color: $c-secondary;
-  }
-
   &__characteristics {
-    display: grid;
-    grid-gap: 8px;
     margin: 16px 0;
-    border-top: 1px solid #e2e6e9;
-    padding-top: 16px;
-  }
-  &__line {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    font-weight: 600;
-    line-height: 15px;
-    font-size: 12px;
-    &-key {
-      color: $c-secondary;
-    }
-    &-value {
-      color: $c-primary;
-    }
   }
 }

@@ -1,10 +1,14 @@
 import "./index.scss";
-import React from "react";
+import React, { FC } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 
-const ItemToolbar = () => {
+interface Props {
+  classToolbar?: string;
+}
+
+const ItemToolbar: FC<Props> = ({ classToolbar }) => {
   return (
-    <div className="item__toolbar">
+    <div className={`item__toolbar ${classToolbar && classToolbar}`}>
       <button type="button" className={`item__button`}>
         Add to cart
       </button>

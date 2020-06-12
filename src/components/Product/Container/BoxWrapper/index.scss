@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/main.scss";
+
+.product-block {
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e6e9;
+  }
+}
