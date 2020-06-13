@@ -1,11 +1,18 @@
 @import "../../assets/styles/main.scss";
 
 .pricing {
-  margin-top: 8px;
+  margin: 6.5px 0;
+  &--options {
+    margin-top: 32px;
+  }
   &__price {
     font-weight: bold;
     font-size: 22px;
     line-height: 140%;
+    &--options {
+      font-size: 32px;
+      line-height: 41px;
+    }
   }
   &__sale {
     margin-left: 8px;
@@ -14,6 +21,10 @@
     line-height: 28px;
     text-decoration-line: line-through;
     color: $c-secondary;
+    &--options {
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
 }
 

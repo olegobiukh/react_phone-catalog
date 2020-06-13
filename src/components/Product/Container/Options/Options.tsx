@@ -20,12 +20,10 @@ const Options = () => {
       <PriceSale
         price={1199}
         sale={100}
-        classPrice={`product-options__price`}
-        classSale={`product-options__sale`}
-        classPricing={`product-options__pricing`}
+        classes={'options'}
       />
       <ItemToolbar classToolbar={`product-options__toolbar`} />
-      <Specs items={specs} classes={`product-options__specs`} />
+      <Specs items={specs} classes='options' />
     </div>
   );
 };

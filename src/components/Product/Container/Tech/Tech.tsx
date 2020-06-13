@@ -13,9 +13,7 @@ const Tech = () => {
 
   return (
     <BoxWrapper title={"Tech specs"}>
-      <div className="tech">
-        <Specs items={specs} />
-      </div>
+      <Specs items={specs} classes='tech' />
     </BoxWrapper>
   );
 };
