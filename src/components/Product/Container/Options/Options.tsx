@@ -16,14 +16,13 @@ const Options = () => {
 
   return (
     <div className={`product-options`}>
-      <Toolbar />
-      <PriceSale
-        price={1199}
-        sale={100}
-        classes={'options'}
-      />
-      <ItemToolbar classToolbar={`product-options__toolbar`} />
-      <Specs items={specs} classes='options' />
+      <div className={`product-options__left`}>
+        <Toolbar />
+        <PriceSale price={1199} sale={100} classes={"options"} />
+        <ItemToolbar classes="options" />
+        <Specs items={specs} classes="options" />
+      </div>
+      <span className={`product-options__id`}>ID: 802390</span>
     </div>
   );
 };

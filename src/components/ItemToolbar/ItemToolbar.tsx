@@ -1,14 +1,20 @@
 import "./index.scss";
 import React, { FC } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
+import classNames from "classnames";
 
 interface Props {
-  classToolbar?: string;
+  classes?: string;
 }
 
-const ItemToolbar: FC<Props> = ({ classToolbar }) => {
+const ItemToolbar: FC<Props> = ({ classes }) => {
+  const specsClass = classNames({
+    item__toolbar: true,
+    "item__toolbar--options": classes === "options",
+  });
+
   return (
-    <div className={`item__toolbar ${classToolbar && classToolbar}`}>
+    <div className={specsClass}>
       <button type="button" className={`item__button`}>
         Add to cart
       </button>

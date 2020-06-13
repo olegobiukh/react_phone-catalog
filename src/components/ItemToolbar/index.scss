@@ -5,10 +5,15 @@
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
+    &--options {
+      grid-template-columns: calc(320px - 40px - 8px) 40px;
+      margin-top: 16px;
+    }
   }
   &__button {
     border: none;
     padding: 0 48px;
+    text-align: center;
     line-height: 40px;
     font-weight: 600;
     font-size: 14px;
