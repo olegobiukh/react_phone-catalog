@@ -1,5 +1,8 @@
+@import "./assets/styles/main.scss";
+
 .app {
   &__wrapper {
+    @extend %w_content;
     max-width: 1136px;
     margin: auto;
     padding-top: 64px;

@@ -1,0 +1,14 @@
+@import "../../../assets/styles/main.scss";
+
+.button-black {
+  background: $c-primary;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  padding: 14px 0 13px;
+  border: none;
+  &--added {
+  }
+}

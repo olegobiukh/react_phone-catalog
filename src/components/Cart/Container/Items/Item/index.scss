@@ -1,0 +1,36 @@
+@import "../../../../../assets/styles/main.scss";
+
+.cart-item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #e2e6e9;
+  padding: 31px 4% 31px;
+  &__image {
+    width: 66px;
+    height: 66px;
+    margin-left: 10%;
+  }
+  &__toolbar {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    margin-left: 20%;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+    color: $c-primary;
+    margin-left: 29%;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $c-primary;
+    margin-left: 31px;
+    width: 295px;
+  }
+}

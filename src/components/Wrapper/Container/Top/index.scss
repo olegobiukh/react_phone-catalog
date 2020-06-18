@@ -1,12 +1,15 @@
-@import "../../../assets/styles/main.scss";
+@import "../../../../assets/styles/main.scss";
 
-.catalog-top {
+.wrapper-top {
   margin-top: 40px;
   &__title {
     font-weight: bold;
     font-size: 32px;
     line-height: 41px;
     letter-spacing: -0.01em;
+    &--mt16 {
+      margin-top: 16px;
+    }
   }
   &__subtitle {
     margin-top: 8px;

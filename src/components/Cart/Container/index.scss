@@ -1,0 +1,8 @@
+.cart__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 60% 38%;
+  align-items: flex-start;
+  grid-gap: 2%;
+  margin-top: 24px;
+}

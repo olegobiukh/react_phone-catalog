@@ -6,23 +6,24 @@ import Favourites from "../containers/Favourites";
 
 export default [
   {
-    url: '/',
+    url: "/",
     component: Home,
   },
   {
-    url: '/:category',
-    component: Catalog
+    url: "/favourites",
+    component: Favourites,
   },
   {
-    url: '/:category/:id',
-    component: Product
+    url: "/cart",
+    component: Cart,
   },
   {
-    url: '/favourites',
-    component: Favourites
+    url: "/:category",
+    component: Catalog,
   },
+
   {
-    url: '/cart',
-    component: Cart
+    url: "/:category/:id",
+    component: Product,
   },
-]
+];

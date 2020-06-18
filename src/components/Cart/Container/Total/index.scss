@@ -1,0 +1,28 @@
+@import "../../../../assets/styles/main.scss";
+
+.cart-total {
+  padding: 24px;
+  display: grid;
+  border: 1px solid #e2e6e9;
+  align-items: flex-start;
+  &__price {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    color: $c-primary;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $c-secondary;
+  }
+  &__content {
+    text-align: center;
+    padding-bottom: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e2e6e9;
+  }
+}

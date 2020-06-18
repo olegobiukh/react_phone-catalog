@@ -1,12 +1,17 @@
 @import "../../assets/styles/main.scss";
 
 .footer {
+  @extend %w_content;
   display: grid;
+  margin: auto;
   margin-top: 80px;
   height: 96px;
   box-shadow: 0px -1px 0px #e2e6e9;
   background: #fff;
   &__container {
+    @include media(1250px) {
+      justify-content: normal;
+    }
     max-width: 1136px;
     width: 100%;
     display: grid;
@@ -15,7 +20,20 @@
     align-items: center;
     margin: auto;
   }
+  &__logo {
+    @include media(1250px) {
+      order: 2;
+      grid-column: 1/1;
+      grid-row: 2;
+    }
+  }
   &__social {
+    @include media(1250px) {
+      width: 100%;
+      order: 1;
+      grid-column: 1/3;
+      grid-row: 1;
+    }
     display: grid;
     grid-auto-flow: column;
     justify-content: flex-start;
@@ -31,9 +49,15 @@
     }
   }
   &__right {
+    @include media(1250px) {
+      order: 3;
+      justify-self: end;
+      grid-row: 2;
+    }
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    justify-content: flex-start;
     grid-gap: 16px;
     font-weight: 600;
     font-size: 12px;

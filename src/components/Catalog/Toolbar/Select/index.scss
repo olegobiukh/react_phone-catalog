@@ -1,12 +1,17 @@
 @import "../../../../assets/styles/main.scss";
 
 .catalog-select {
+  @include media(450px) {
+    width: auto;
+  }
   position: relative;
   padding: 10px 20px 10px 12px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   margin-top: 4px;
+  width: 176px;
+  border: 1px solid #b1b1b1;
   &__title {
     font-weight: 600;
     font-size: 12px;

@@ -1,17 +1,15 @@
 import "./index.scss";
 
 import React from "react";
+import WrapperContainer from "../../components/Wrapper/Container";
 import Container from "../../components/Catalog/Container";
-import Breadcrumbs from "../../components/Catalog/Breadcrumbs";
-import Top from "../../components/Catalog/Top";
 
 const Catalog = () => {
+  const title = "Mobile phones";
   return (
-    <div className="catalog">
-      <Breadcrumbs />
-      <Top />
+    <WrapperContainer classes={"catalog"} title={title} quantity={39}>
       <Container />
-    </div>
+    </WrapperContainer>
   );
 };
 

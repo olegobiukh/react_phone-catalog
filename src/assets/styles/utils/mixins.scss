@@ -9,3 +9,7 @@
     align-items: center;
   }
 }
+
+@mixin media($width) {
+  @media (max-width: $width) { @content; }
+}

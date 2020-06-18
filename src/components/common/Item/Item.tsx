@@ -1,10 +1,10 @@
 import "./index.scss";
 import React from "react";
-import ItemToolbar from "../ItemToolbar";
-import PriceSale from "../PriceSale";
-import Specs from "../Specs";
+import ItemToolbar from "../../ItemToolbar";
+import PriceSale from "../../PriceSale";
+import Specs from "../../Specs";
 
-const ItemImg = require("../../assets/images/item.png");
+const ItemImg = require("../../../assets/images/item.png");
 
 const Item = () => {
   const specs = {

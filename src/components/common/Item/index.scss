@@ -1,8 +1,12 @@
-@import "../../assets/styles/main.scss";
+@import "../../../assets/styles/main.scss";
 
 .item {
-  width: 272px;
-  border: 1px solid #E2E6E9;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  // width: 272px;
+  width: 100%;
+  border: 1px solid #e2e6e9;
   padding: 32px 24px 24px;
   &__box {
     margin-top: 24px;

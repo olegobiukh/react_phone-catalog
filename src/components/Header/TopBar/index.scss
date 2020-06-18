@@ -2,11 +2,20 @@
 
 .top-bar {
   @include mGridColumn(0, true);
+  &__input {
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $c-primary;
+    &::placeholder {
+      color: #b4bdc4;
+    }
+  }
   &__item {
-    display: grid;
-    align-items: center;
+    @include mGridColumn(25px, true);
     padding: 0 25px;
-    box-shadow: -1px 0px 0px #E2E6E9;
+    box-shadow: -1px 0px 0px #e2e6e9;
     height: 100%;
   }
 }

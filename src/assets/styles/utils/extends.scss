@@ -1,3 +1,7 @@
-// %button-arror {
+@import "./mixins.scss";
 
-// }
+%w_content {
+  @include media(1250px) {
+    width: 90%;
+  }
+}

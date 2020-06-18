@@ -2,7 +2,7 @@ import "./index.scss";
 
 import React, { FC, useState } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import Item from "../../Item";
+import Item from "../../common/Item";
 import uid from "uid";
 import Arrow from "../../Arrow";
 

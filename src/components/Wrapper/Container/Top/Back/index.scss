@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/main.scss";
+
+.back {
+  display: grid;
+  justify-content: flex-start;
+  grid-auto-flow: column;
+  grid-gap: 9px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: $c-secondary;
+}

@@ -5,12 +5,11 @@ import uid from "uid";
 
 const Select = () => {
   const options = ["Newest", "Oldest"];
-  const width = "176px";
 
   return (
     <div className={`catalog-select__wrapper`}>
       <div className="catalog-select__title">Sort by</div>
-      <select className={`catalog-select`} style={{ width: width }}>
+      <select className={`catalog-select`}>
         {options.map((item) => (
           <option key={uid()} value={item}>
             {item}

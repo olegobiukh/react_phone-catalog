@@ -1,0 +1,19 @@
+@import "../../../../../../assets/styles/main.scss";
+
+.toolbar-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  &__button {
+    border: 1px solid #b4bdc4;
+    color: #000;
+    cursor: pointer;
+    &--disabled {
+      border-color: #e2e6e9;
+      color: #b4bdc4;
+      pointer-events: none;
+    }
+  }
+}
