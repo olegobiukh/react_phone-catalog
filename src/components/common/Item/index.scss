@@ -1,13 +1,25 @@
 @import "../../../assets/styles/main.scss";
 
 .item {
+  @include media(650px) {
+    grid-auto-flow: column;
+    width: 100%;
+  }
+  @include media(533px) {
+    grid-auto-flow: row;
+    width: 272px;
+  }
   display: grid;
   justify-content: center;
   justify-items: center;
-  // width: 272px;
-  width: 100%;
+  width: 272px;
   border: 1px solid #e2e6e9;
   padding: 32px 24px 24px;
+  &--catalog {
+    @include media(533px) {
+      grid-template-columns: 100%;
+    }
+  }
   &__box {
     margin-top: 24px;
   }

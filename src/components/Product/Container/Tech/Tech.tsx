@@ -1,7 +1,7 @@
 import "./index.scss";
 
 import React from "react";
-import BoxWrapper from "../BoxWrapper";
+// import BoxWrapper from "../BoxWrapper";
 import Specs from "../../../Specs";
 
 const Tech = () => {
@@ -12,9 +12,9 @@ const Tech = () => {
   };
 
   return (
-    <BoxWrapper title={"Tech specs"}>
+    // <BoxWrapper title={"Tech specs"} type="tech">
       <Specs items={specs} classes='tech' />
-    </BoxWrapper>
+    // </BoxWrapper>
   );
 };
 

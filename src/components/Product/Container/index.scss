@@ -1,6 +1,13 @@
 @import "../../../assets/styles/main.scss";
 
 .product-container {
+  @include media(1220px) {
+    grid-template-columns: 50%;
+  }
+  @include media(768px) {
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 40px;

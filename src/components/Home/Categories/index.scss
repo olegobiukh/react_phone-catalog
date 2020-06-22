@@ -11,6 +11,9 @@
     color: $c-primary;
   }
   &__container {
+    @include media(460px) {
+      grid-template-columns: 1fr;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;

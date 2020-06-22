@@ -2,12 +2,12 @@
 
 .item {
   &__toolbar {
+    margin-top: 16px;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     &--options {
-      grid-template-columns: calc(320px - 40px - 8px) 40px;
-      margin-top: 16px;
+      grid-template-columns: calc(320px - 40px - 43px) 40px;
     }
   }
   &__button {

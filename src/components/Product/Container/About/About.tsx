@@ -1,7 +1,7 @@
 import "./index.scss";
 
 import React from "react";
-import BoxWrapper from "../BoxWrapper";
+// import BoxWrapper from "../BoxWrapper";
 import uid from "uid";
 
 const About = () => {
@@ -51,9 +51,9 @@ const About = () => {
   ));
 
   return (
-    <BoxWrapper title={"About"}>
+    // <BoxWrapper title={"About"} type={"about"}>
       <div className="product-about">{newItems}</div>
-    </BoxWrapper>
+    // </BoxWrapper>
   );
 };
 

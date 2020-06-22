@@ -6,10 +6,10 @@
     justify-content: space-evenly;
   }
   @include media(940px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
   }
   @include media(620px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: auto;
   }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
