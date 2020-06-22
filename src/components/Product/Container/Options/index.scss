@@ -5,6 +5,8 @@
     grid-auto-flow: row;
     grid-column: 1;
     grid-row: 2;
+    justify-content: normal;
+    width: 100%;
   }
   @include media(768px) {
     justify-content: normal;
@@ -20,6 +22,7 @@
   &__left {
     @include media(1220px) {
       margin-top: 20px;
+      width: 100%;
     }
     @include media(768px) {
       width: 100%;
