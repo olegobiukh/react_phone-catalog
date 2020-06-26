@@ -14,13 +14,13 @@ const TopBar = () => {
           placeholder="Search in phones..."
           className={`top-bar__input`}
         />
-        <RiSearchLine />
+        <RiSearchLine className={`top-bar__item-icon`} />
       </div>
       <div className="top-bar__item">
-        <AiOutlineHeart size={25} />
+        <AiOutlineHeart size={25} className={`top-bar__item-icon`} />
       </div>
       <div className="top-bar__item">
-        <FiShoppingBag size={25} />
+        <FiShoppingBag size={25} className={`top-bar__item-icon`} />
       </div>
     </div>
   );

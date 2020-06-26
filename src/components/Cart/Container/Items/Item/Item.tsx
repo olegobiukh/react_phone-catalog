@@ -8,7 +8,7 @@ const ItemImg = require("../../../../../assets/images/cart/phone.png");
 const Item = () => {
   return (
     <article className={`cart-item`}>
-      <IoMdClose />
+      <IoMdClose className={`cart-item__close`} />
       <img src={ItemImg} alt="phone" className={`cart-item__image`} />
       <h2 className={`cart-item__title`}>
         Apple iPhone 11 Pro Max 64GB Gold (iMT9G2FS/A)

@@ -2,6 +2,9 @@
 
 .app {
   &__wrapper {
+    @include media(786px) {
+     padding-top: 0;
+    }
     @extend %w_content;
     max-width: 1136px;
     margin: auto;

@@ -1,0 +1,26 @@
+@import "../../../assets/styles/main.scss";
+
+.burger {
+  @include media(1260px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  width: 50px;
+  // max-height: 66px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3px;
+  cursor: pointer;
+  &__line {
+    background: #000;
+  }
+  &--active .burger__line {
+  }
+}

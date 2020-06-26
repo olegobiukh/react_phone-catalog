@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import React from "react";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import routes from "./router";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="app">
-        {/* <Header /> */}
+        <Header />
         <main className={`app__wrapper`}>
           <Switch>{newRoutes}</Switch>
         </main>

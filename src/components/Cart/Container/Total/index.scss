@@ -1,6 +1,16 @@
 @import "../../../../assets/styles/main.scss";
 
 .cart-total {
+  @include media(1220px) {
+    grid-row: 1;
+    grid-auto-flow: column;
+    align-items: end;
+    grid-gap: 25px;
+  }
+  @include media(660px) {
+    align-items: space-between;
+    grid-gap: 0;
+  }
   padding: 24px;
   display: grid;
   border: 1px solid #e2e6e9;
@@ -13,12 +23,24 @@
     color: $c-primary;
   }
   &__text {
+    @include media(400px) {
+      display: none;
+    }
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
     color: $c-secondary;
   }
   &__content {
+    @include media(1220px) {
+      border-right: 1px solid #e2e6e9;
+      border-bottom: none;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    @include media(660px) {
+      border-right: none;
+    }
     text-align: center;
     padding-bottom: 24px;
     width: 100%;

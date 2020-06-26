@@ -1,4 +1,19 @@
+@import "../../assets/styles/main.scss";
+
 .header {
+  @include media(1260px) {
+    position: relative;
+    padding: 0;
+  }
+  @include media(786px) {
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+  }
+  @include media(400px) {
+    padding-left: 0;
+    // padding-left: 18px;
+  }
   position: fixed;
   top: 0;
   left: 0;

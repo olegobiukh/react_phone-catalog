@@ -1,0 +1,28 @@
+@import "../../../assets/styles/main.scss";
+
+.cross {
+  @include media(1260px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    background-color: red;
+    z-index: 4;
+  }
+
+  width: 12vh;
+  height: 12vh;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 6%;
+    background: #000;
+    display: block;
+  }
+}

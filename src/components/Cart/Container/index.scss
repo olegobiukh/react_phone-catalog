@@ -1,4 +1,10 @@
+@import "../../../assets/styles/main.scss";
+
 .cart__container {
+  @include media(1220px) {
+    grid-auto-flow: row;
+    grid-template-columns: 100%;
+  }
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 60% 38%;
