@@ -31,9 +31,6 @@
         display: none;
         grid-gap: 0;
       }
-      @include media(400px) {
-        z-index: 2;
-      }
     }
   }
 }

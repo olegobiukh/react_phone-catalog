@@ -2,27 +2,27 @@
 
 .cross {
   @include media(1260px) {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    position: relative;
     opacity: 0.9;
-    background-color: red;
-    z-index: 4;
+    background-color: #000;
+    // z-index: 4;
   }
-
-  width: 12vh;
-  height: 12vh;
+  display: none;
+  // width: 12vh;
+  // height: 12vh;
+  height: 8.1vh;
+  width: 8.1vh;
   cursor: pointer;
-  &::before,
-  &::after {
+  &__line {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
     width: 80%;
     height: 6%;
-    background: #000;
+    background: #fff;
     display: block;
   }
 }

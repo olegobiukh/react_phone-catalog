@@ -2,6 +2,7 @@ import "./index.scss";
 
 import React from "react";
 // import Burger from "../Burger";
+// import Cross from "../Cross";
 
 const Nav = () => {
   return (
