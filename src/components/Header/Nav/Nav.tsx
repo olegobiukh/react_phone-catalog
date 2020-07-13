@@ -1,20 +1,53 @@
 import "./index.scss";
 
 import React from "react";
-// import Burger from "../Burger";
-// import Cross from "../Cross";
+import uid from "uid";
+import { useHistory, useLocation } from "react-router-dom";
+
+const urls = [
+  {
+    title: "home",
+    url: "/",
+  },
+  {
+    title: "phones",
+    url: "/phones",
+  },
+  {
+    title: "tablets",
+    url: "/tablets",
+  },
+  {
+    title: "accessories",
+    url: "/accessories",
+  },
+];
 
 const Nav = () => {
+  let history = useHistory();
+  let location = useLocation();
+  console.log(location);
+
+  const setLocation = (url: string) => {
+    history.push(url);
+  };
+
   return (
     <>
       <nav className={`nav`}>
-        {/* <Burger /> */}
         <h1 className="nav__logo">logo</h1>
         <ul className="nav__list">
-          <li className="nav__item nav__item--active">home</li>
-          <li className="nav__item">phones</li>
-          <li className="nav__item">tablets</li>
-          <li className="nav__item">accessories</li>
+          {urls.map((item) => (
+            <li
+              key={uid()}
+              className={`nav__item ${
+                location.pathname === item.url && "nav__item--active"
+              }`}
+              onClick={() => setLocation(item.url)}
+            >
+              {item.title}
+            </li>
+          ))}
         </ul>
       </nav>
       <div className={`nav__wrapper`} />
