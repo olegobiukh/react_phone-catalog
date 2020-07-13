@@ -1,8 +1,9 @@
 import "./index.scss";
 
 import React from "react";
-import uid from "uid";
-import { useHistory, useLocation } from "react-router-dom";
+// import uid from "uid";
+// import { useHistory, useLocation, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const urls = [
   {
@@ -24,13 +25,13 @@ const urls = [
 ];
 
 const Nav = () => {
-  let history = useHistory();
-  let location = useLocation();
-  console.log(location);
+  // let history = useHistory();
+  // let location = useLocation();
+  // console.log(location);
 
-  const setLocation = (url: string) => {
-    history.push(url);
-  };
+  // const setLocation = (url: string) => {
+  //   history.push(url);
+  // };
 
   return (
     <>
@@ -38,15 +39,14 @@ const Nav = () => {
         <h1 className="nav__logo">logo</h1>
         <ul className="nav__list">
           {urls.map((item) => (
-            <li
-              key={uid()}
-              className={`nav__item ${
-                location.pathname === item.url && "nav__item--active"
-              }`}
-              onClick={() => setLocation(item.url)}
+            <NavLink
+              activeClassName="nav__item--active"
+              exact={true}
+              className="nav__item"
+              to={item.url}
             >
               {item.title}
-            </li>
+            </NavLink>
           ))}
         </ul>
       </nav>

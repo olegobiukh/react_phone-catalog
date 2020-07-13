@@ -52,6 +52,7 @@
       font-size: 5.5vh;
     }
     cursor: pointer;
+    text-decoration: none;
     &--active {
       position: relative;
       &::after {
